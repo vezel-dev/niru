@@ -1,0 +1,71 @@
+<Project>
+    <PropertyGroup Condition="'$(DebugSymbols)' == 'true'">
+        <DebugType>embedded</DebugType>
+        <EmbedAllSources>true</EmbedAllSources>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Using Include="System.Diagnostics.CodeAnalysis" />
+        <Using Include="System.Globalization" />
+        <Using Include="System.Runtime.CompilerServices" />
+        <Using Include="System.Runtime.InteropServices" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AdditionalFiles Include="$(MSBuildThisFileDirectory).stylecop.json" />
+    </ItemGroup>
+
+    <Choose>
+        <When Condition="'$(IsPackable)' == 'true'">
+            <PropertyGroup>
+                <ApplicationIcon Condition="'$(OutputType)' != 'Library'">$(MSBuildThisFileDirectory)niru.ico</ApplicationIcon>
+                <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+                <IsTrimmable Condition="'$(OutputType)' == 'Library'">>true</IsTrimmable>
+                <PackageIcon>niru.png</PackageIcon>
+                <PackageReadmeFile>PACKAGE.md</PackageReadmeFile>
+            </PropertyGroup>
+
+            <ItemGroup>
+                <None Include="$(MSBuildThisFileDirectory)PACKAGE.md; $(MSBuildThisFileDirectory)niru.png"
+                      Pack="true"
+                      PackagePath=""
+                      Visible="false" />
+            </ItemGroup>
+        </When>
+    </Choose>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.SourceLink.GitHub"
+                          PrivateAssets="all" />
+        <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers"
+                          PrivateAssets="all" />
+        <PackageReference Include="Nerdbank.GitVersioning"
+                          PrivateAssets="all" />
+        <PackageReference Include="StyleCop.Analyzers"
+                          PrivateAssets="all" />
+    </ItemGroup>
+
+    <Target Name="_SetReleaseNotes"
+            DependsOnTargets="GetBuildVersion"
+            BeforeTargets="GenerateNuspec"
+            Condition="'$(IsPackable)' == 'true'">
+        <PropertyGroup>
+            <PackageReleaseNotes>https://github.com/vezel-dev/niru/releases/tag/v$(Version)</PackageReleaseNotes>
+        </PropertyGroup>
+    </Target>
+
+    <!--
+    Get rid of the restored package(s) in the repository's local package cache.
+    This ensures that people will not have to fiddle around with removing these
+    manually when iterating on changes locally.
+    -->
+    <Target Name="_ClearPackageCache"
+            AfterTargets="Clean; Pack"
+            Condition="'$(IsPackable)' == 'true'">
+        <ItemGroup>
+            <_CachedFiles Include="$(NuGetPackageRoot)/$(PackageId.ToLowerInvariant())/**" />
+        </ItemGroup>
+
+        <Delete Files="@(_CachedFiles)" />
+    </Target>
+</Project>

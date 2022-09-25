@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>Vezel.Niru.Guests.Riscv</AssemblyName>
+        <IsPackable>true</IsPackable>
+        <PackageDescription>$(PackageDescription)
+
+This package provides emulation for RISC-V guests.</PackageDescription>
+        <PackageId>Vezel.Niru.Guests.Riscv</PackageId>
+        <RootNamespace>Vezel.Niru.Guests.Riscv</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../core/core.csproj" />
+    </ItemGroup>
+</Project>

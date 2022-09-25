@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>Vezel.Niru.Hosts.Cil</AssemblyName>
+        <IsPackable>true</IsPackable>
+        <PackageDescription>$(PackageDescription)
+
+This package provides just-in-time compilation through the .NET runtime.</PackageDescription>
+        <PackageId>Vezel.Niru.Hosts.Cil</PackageId>
+        <RootNamespace>Vezel.Niru.Hosts.Cil</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../core/core.csproj" />
+    </ItemGroup>
+</Project>

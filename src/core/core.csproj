@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>Vezel.Niru.Core</AssemblyName>
+        <IsPackable>true</IsPackable>
+        <PackageDescription>$(PackageDescription)
+
+This package provides shared emulation functionality used by all guests and
+hosts.</PackageDescription>
+        <PackageId>Vezel.Niru.Core</PackageId>
+        <RootNamespace>Vezel.Niru</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../common/common.csproj" />
+    </ItemGroup>
+</Project>

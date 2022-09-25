@@ -1,0 +1,44 @@
+<Project>
+    <PropertyGroup>
+        <Product>Niru</Product>
+        <Description>Niru is a full-system computer emulator written in C#.</Description>
+        <Company>Vezel</Company>
+        <Authors>$(Company) Contributors</Authors>
+        <Copyright>Copyright © $(Authors)</Copyright>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <!-- TODO: Switch to latest-all in .NET 7. -->
+        <AnalysisLevel>preview-all</AnalysisLevel>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+        <DebugType>none</DebugType>
+        <EnablePackageValidation>true</EnablePackageValidation>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <ImplicitUsings>true</ImplicitUsings>
+        <IsPackable>false</IsPackable>
+        <IsPublishable>false</IsPublishable>
+        <!-- TODO: Switch to latest in .NET 7. -->
+        <LangVersion>preview</LangVersion>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <Nullable>enable</Nullable>
+        <PackageDescription>$(Description)
+
+Niru dynamically translates blocks of guest architecture code to a generic
+intermediate representation, optimizes the code, and then passes it off to an
+execution module which either compiles the IR to host architecture code and runs
+it, or interprets the IR directly if just-in-time compilation is not supported
+on the host platform. As a result of this design, **Niru** can be easily ported
+to new guest and host architectures.</PackageDescription>
+        <PackageLicenseExpression>0BSD</PackageLicenseExpression>
+        <PackageOutputPath>$(MSBuildThisFileDirectory)pkg/feed/</PackageOutputPath>
+        <PackageProjectUrl>https://docs.vezel.dev/niru</PackageProjectUrl>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <RepositoryUrl>https://github.com/vezel-dev/niru.git</RepositoryUrl>
+        <!-- TODO: Remove in .NET 7. -->
+        <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+        <TargetFramework>net7.0</TargetFramework>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+</Project>

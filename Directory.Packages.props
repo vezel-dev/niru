@@ -1,0 +1,30 @@
+<Project>
+    <ItemGroup>
+        <PackageVersion Include="Iced"
+                        Version="1.17.0" />
+        <PackageVersion Include="LibObjectFile"
+                        Version="0.3.6" />
+        <PackageVersion Include="Microsoft.SourceLink.GitHub"
+                        Version="1.1.1" />
+        <PackageVersion Include="Microsoft.VisualStudio.Threading.Analyzers"
+                        Version="17.3.44" />
+        <PackageVersion Include="Microsoft.Windows.CsWin32"
+                        Version="0.2.63-beta" />
+        <PackageVersion Include="Microsoft.Windows.SDK.Win32Docs"
+                        Version="0.1.8-alpha" />
+        <PackageVersion Include="Microsoft.Windows.SDK.Win32Metadata"
+                        Version="35.0.14-preview" />
+        <PackageVersion Include="Nerdbank.GitVersioning"
+                        Version="3.5.113" />
+        <PackageVersion Include="RadLine"
+                        Version="0.6.0" />
+        <PackageVersion Include="Silk.NET.Input.Sdl"
+                        Version="2.16.0" />
+        <PackageVersion Include="Silk.NET.OpenAL"
+                        Version="2.16.0" />
+        <PackageVersion Include="Spectre.Console.Cli"
+                        Version="0.45.1-preview.0.19" />
+        <PackageVersion Include="StyleCop.Analyzers"
+                        Version="1.2.0-beta.435" />
+    </ItemGroup>
+</Project>

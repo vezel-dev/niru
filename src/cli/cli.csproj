@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>niru</AssemblyName>
+        <IsPackable>true</IsPackable>
+        <IsPublishable>true</IsPublishable>
+        <OutputType>Exe</OutputType>
+        <PackAsTool>true</PackAsTool>
+        <PackageDescription>$(PackageDescription)
+
+This package provides the .NET global tool.</PackageDescription>
+        <PackageId>niru</PackageId>
+        <RollForward>LatestMajor</RollForward>
+        <RootNamespace>Vezel.Niru.Driver</RootNamespace>
+        <ServerGarbageCollection>true</ServerGarbageCollection>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Using Include="Spectre.Console" />
+        <Using Include="Spectre.Console.Cli" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../guests/riscv/riscv.csproj" />
+        <ProjectReference Include="../hosts/arm64/arm64.csproj" />
+        <ProjectReference Include="../hosts/x64/x64.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="LibObjectFile" />
+        <PackageReference Include="RadLine" />
+        <PackageReference Include="Silk.NET.Input.Sdl" />
+        <PackageReference Include="Silk.NET.OpenAL" />
+        <PackageReference Include="Spectre.Console.Cli" />
+    </ItemGroup>
+</Project>

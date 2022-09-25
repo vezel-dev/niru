@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>Vezel.Niru.Hosts.Interpreter</AssemblyName>
+        <IsPackable>true</IsPackable>
+        <PackageDescription>$(PackageDescription)
+
+This package provides interpretation for hosts that disallow just-in-time
+compilation.</PackageDescription>
+        <PackageId>Vezel.Niru.Hosts.Interpreter</PackageId>
+        <RootNamespace>Vezel.Niru.Hosts.Interpreter</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../core/core.csproj" />
+    </ItemGroup>
+</Project>

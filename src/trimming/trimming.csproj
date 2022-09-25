@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <!--
+    This project exists solely so that we can get full trimming analysis of the
+    library projects when running dotnet publish.
+    -->
+
+    <PropertyGroup>
+        <AssemblyName>trimming</AssemblyName>
+        <IsPublishable>true</IsPublishable>
+        <OutputType>Exe</OutputType>
+        <PublishTrimmed>true</PublishTrimmed>
+        <RootNamespace>Vezel.Niru.Trimming</RootNamespace>
+        <UseCurrentRuntimeIdentifier>true</UseCurrentRuntimeIdentifier>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <TrimmerRootAssembly Include="Vezel.Niru.Common" />
+        <TrimmerRootAssembly Include="Vezel.Niru.Core" />
+        <TrimmerRootAssembly Include="Vezel.Niru.Guests.Riscv" />
+        <TrimmerRootAssembly Include="Vezel.Niru.Hosts.Arm64" />
+        <TrimmerRootAssembly Include="Vezel.Niru.Hosts.Cil" />
+        <TrimmerRootAssembly Include="Vezel.Niru.Hosts.Interpreter" />
+        <TrimmerRootAssembly Include="Vezel.Niru.Hosts.X64" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../common/common.csproj" />
+        <ProjectReference Include="../core/core.csproj" />
+        <ProjectReference Include="../guests/riscv/riscv.csproj" />
+        <ProjectReference Include="../hosts/arm64/arm64.csproj" />
+        <ProjectReference Include="../hosts/cil/cil.csproj" />
+        <ProjectReference Include="../hosts/interpreter/interpreter.csproj" />
+        <ProjectReference Include="../hosts/x64/x64.csproj" />
+    </ItemGroup>
+</Project>

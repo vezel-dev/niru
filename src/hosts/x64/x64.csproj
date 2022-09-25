@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>Vezel.Niru.Hosts.X64</AssemblyName>
+        <IsPackable>true</IsPackable>
+        <PackageDescription>$(PackageDescription)
+
+This package provides just-in-time compilation for x64 hosts.</PackageDescription>
+        <PackageId>Vezel.Niru.Hosts.X64</PackageId>
+        <RootNamespace>Vezel.Niru.Hosts.X64</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../core/core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Iced" />
+    </ItemGroup>
+</Project>

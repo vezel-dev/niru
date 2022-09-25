@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>Vezel.Niru.Hosts.Arm64</AssemblyName>
+        <IsPackable>true</IsPackable>
+        <PackageDescription>$(PackageDescription)
+
+This package provides just-in-time compilation for Arm64 hosts.</PackageDescription>
+        <PackageId>Vezel.Niru.Hosts.Arm64</PackageId>
+        <RootNamespace>Vezel.Niru.Hosts.Arm64</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../core/core.csproj" />
+    </ItemGroup>
+</Project>
