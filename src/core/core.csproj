@@ -11,6 +11,11 @@ hosts.</PackageDescription>
     </PropertyGroup>
 
     <ItemGroup>
+        <Using Include="Vezel.Niru.Collections" />
+        <Using Include="Vezel.Niru.Diagnostics" />
+    </ItemGroup>
+
+    <ItemGroup>
         <ProjectReference Include="../common/common.csproj" />
     </ItemGroup>
 </Project>

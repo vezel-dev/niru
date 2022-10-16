@@ -10,6 +10,11 @@ This package provides emulation for RISC-V guests.</PackageDescription>
     </PropertyGroup>
 
     <ItemGroup>
+        <Using Include="Vezel.Niru.Diagnostics" />
+        <Using Include="Vezel.Niru.Translation" />
+    </ItemGroup>
+
+    <ItemGroup>
         <ProjectReference Include="../../core/core.csproj" />
     </ItemGroup>
 </Project>
