@@ -1,8 +1,6 @@
-using Vezel.Niru.Diagnostics;
-
 namespace Vezel.Niru;
 
-public ref struct ScopedAction<T1>
+public readonly ref struct ScopedAction<T1>
 {
     private readonly Action<T1> _action;
 

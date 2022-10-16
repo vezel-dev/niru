@@ -22,6 +22,8 @@ This package provides the .NET global tool.</PackageDescription>
     <ItemGroup>
         <ProjectReference Include="../guests/riscv/riscv.csproj" />
         <ProjectReference Include="../hosts/arm64/arm64.csproj" />
+        <ProjectReference Include="../hosts/cil/cil.csproj" />
+        <ProjectReference Include="../hosts/interpreter/interpreter.csproj" />
         <ProjectReference Include="../hosts/x64/x64.csproj" />
     </ItemGroup>
 
@@ -32,4 +34,11 @@ This package provides the .NET global tool.</PackageDescription>
         <PackageReference Include="Silk.NET.OpenAL" />
         <PackageReference Include="Spectre.Console.Cli" />
     </ItemGroup>
+
+    <Import Project="../core/buildTransitive/Vezel.Niru.Core.targets" />
+    <Import Project="../guests/riscv/buildTransitive/Vezel.Niru.Guests.Riscv.targets" />
+    <Import Project="../hosts/arm64/buildTransitive/Vezel.Niru.Hosts.Arm64.targets" />
+    <Import Project="../hosts/cil/buildTransitive/Vezel.Niru.Hosts.Cil.targets" />
+    <Import Project="../hosts/interpreter/buildTransitive/Vezel.Niru.Hosts.Interpreter.targets" />
+    <Import Project="../hosts/x64/buildTransitive/Vezel.Niru.Hosts.X64.targets" />
 </Project>
