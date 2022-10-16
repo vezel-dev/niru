@@ -10,6 +10,14 @@ This package provides just-in-time compilation through the .NET runtime.</Packag
     </PropertyGroup>
 
     <ItemGroup>
+        <None Include="buildTransitive/**"
+              Pack="true"
+              PackagePath="%(Identity)" />
+    </ItemGroup>
+
+    <ItemGroup>
         <ProjectReference Include="../../core/core.csproj" />
     </ItemGroup>
+
+    <Import Project="../../core/buildTransitive/Vezel.Niru.Core.targets" />
 </Project>

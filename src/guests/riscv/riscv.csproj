@@ -11,10 +11,17 @@ This package provides emulation for RISC-V guests.</PackageDescription>
 
     <ItemGroup>
         <Using Include="Vezel.Niru.Diagnostics" />
-        <Using Include="Vezel.Niru.Translation" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="buildTransitive/**"
+              Pack="true"
+              PackagePath="%(Identity)" />
     </ItemGroup>
 
     <ItemGroup>
         <ProjectReference Include="../../core/core.csproj" />
     </ItemGroup>
+
+    <Import Project="../../core/buildTransitive/Vezel.Niru.Core.targets" />
 </Project>

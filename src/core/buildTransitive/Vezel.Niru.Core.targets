@@ -1,0 +1,7 @@
+<Project>
+    <ItemGroup Condition="'$(ImplicitUsings)' == 'true' or '$(ImplicitUsings)' == 'enable'">
+        <Using Include="Vezel.Niru" />
+        <Using Include="Vezel.Niru.Translation" />
+        <Using Include="Vezel.Niru.Translation.Instructions" />
+    </ItemGroup>
+</Project>

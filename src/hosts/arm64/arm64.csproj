@@ -10,6 +10,14 @@ This package provides just-in-time compilation for Arm64 hosts.</PackageDescript
     </PropertyGroup>
 
     <ItemGroup>
+        <None Include="buildTransitive/**"
+              Pack="true"
+              PackagePath="%(Identity)" />
+    </ItemGroup>
+
+    <ItemGroup>
         <ProjectReference Include="../../core/core.csproj" />
     </ItemGroup>
+
+    <Import Project="../../core/buildTransitive/Vezel.Niru.Core.targets" />
 </Project>

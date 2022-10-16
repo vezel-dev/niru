@@ -10,10 +10,18 @@ This package provides just-in-time compilation for x64 hosts.</PackageDescriptio
     </PropertyGroup>
 
     <ItemGroup>
+        <None Include="buildTransitive/**"
+              Pack="true"
+              PackagePath="%(Identity)" />
+    </ItemGroup>
+
+    <ItemGroup>
         <ProjectReference Include="../../core/core.csproj" />
     </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Iced" />
     </ItemGroup>
+
+    <Import Project="../../core/buildTransitive/Vezel.Niru.Core.targets" />
 </Project>
