@@ -228,12 +228,12 @@ public sealed class RiscvMachineInfo : MachineInfo
         return VectorRegisters[index];
     }
 
-    protected override void CreateSystemRegisters(ScopedAction<int, TypeId, string> creator)
+    protected override void CreateSystemRegisters(scoped ScopedAction<int, TypeId, string> creator)
     {
         throw new NotImplementedException(); // TODO
     }
 
-    protected override void CreateIntegerRegisters(ScopedAction<string> creator)
+    protected override void CreateIntegerRegisters(scoped ScopedAction<string> creator)
     {
         creator.Invoke("zero");
         creator.Invoke("ra");
@@ -273,7 +273,7 @@ public sealed class RiscvMachineInfo : MachineInfo
         creator.Invoke("t6");
     }
 
-    protected override void CreateFloatRegisters(ScopedAction<TypeId, string> creator)
+    protected override void CreateFloatRegisters(scoped ScopedAction<TypeId, string> creator)
     {
         if (!Options.ExtensionF || Options.ExtensionZfinx)
             return;
@@ -314,7 +314,7 @@ public sealed class RiscvMachineInfo : MachineInfo
         creator.Invoke(type, "ft11");
     }
 
-    protected override void CreateVectorRegisters(ScopedAction<string> creator)
+    protected override void CreateVectorRegisters(scoped ScopedAction<string> creator)
     {
         if (!Options.ExtensionV)
             return;

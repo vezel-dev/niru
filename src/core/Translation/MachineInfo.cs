@@ -120,11 +120,11 @@ public abstract class MachineInfo
         };
     }
 
-    protected abstract void CreateSystemRegisters(ScopedAction<int, TypeId, string> creator);
+    protected abstract void CreateSystemRegisters(scoped ScopedAction<int, TypeId, string> creator);
 
-    protected abstract void CreateIntegerRegisters(ScopedAction<string> creator);
+    protected abstract void CreateIntegerRegisters(scoped ScopedAction<string> creator);
 
-    protected abstract void CreateFloatRegisters(ScopedAction<TypeId, string> creator);
+    protected abstract void CreateFloatRegisters(scoped ScopedAction<TypeId, string> creator);
 
-    protected abstract void CreateVectorRegisters(ScopedAction<string> creator);
+    protected abstract void CreateVectorRegisters(scoped ScopedAction<string> creator);
 }
