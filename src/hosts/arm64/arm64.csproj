@@ -19,5 +19,5 @@ This package provides just-in-time compilation for Arm64 hosts.</PackageDescript
         <ProjectReference Include="../../core/core.csproj" />
     </ItemGroup>
 
-    <Import Project="../../core/buildTransitive/Vezel.Niru.Core.targets" />
+    <Import Project="../../core/buildTransitive/Vezel.Niru.targets" />
 </Project>

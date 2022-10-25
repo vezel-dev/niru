@@ -35,7 +35,7 @@ This package provides the .NET global tool.</PackageDescription>
         <PackageReference Include="Spectre.Console.Cli" />
     </ItemGroup>
 
-    <Import Project="../core/buildTransitive/Vezel.Niru.Core.targets" />
+    <Import Project="../core/buildTransitive/Vezel.Niru.targets" />
     <Import Project="../guests/riscv/buildTransitive/Vezel.Niru.Guests.Riscv.targets" />
     <Import Project="../hosts/arm64/buildTransitive/Vezel.Niru.Hosts.Arm64.targets" />
     <Import Project="../hosts/cil/buildTransitive/Vezel.Niru.Hosts.Cil.targets" />

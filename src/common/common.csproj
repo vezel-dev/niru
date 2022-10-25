@@ -11,7 +11,7 @@ This package provides common functionality used by all Niru packages.</PackageDe
 
     <ItemGroup>
         <InternalsVisibleTo Include="niru" />
-        <InternalsVisibleTo Include="Vezel.Niru.Core" />
+        <InternalsVisibleTo Include="Vezel.Niru" />
         <InternalsVisibleTo Include="Vezel.Niru.Guests.Riscv" />
         <InternalsVisibleTo Include="Vezel.Niru.Hosts.Arm64" />
         <InternalsVisibleTo Include="Vezel.Niru.Hosts.Cil" />

@@ -23,5 +23,5 @@ This package provides emulation for RISC-V guests.</PackageDescription>
         <ProjectReference Include="../../core/core.csproj" />
     </ItemGroup>
 
-    <Import Project="../../core/buildTransitive/Vezel.Niru.Core.targets" />
+    <Import Project="../../core/buildTransitive/Vezel.Niru.targets" />
 </Project>

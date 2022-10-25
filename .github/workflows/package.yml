@@ -35,8 +35,8 @@ jobs:
               with:
                   names: |
                       niru
+                      Vezel.Niru
                       Vezel.Niru.Common
-                      Vezel.Niru.Core
                       Vezel.Niru.Guests.Riscv
                       Vezel.Niru.Hosts.Arm64
                       Vezel.Niru.Hosts.Cil

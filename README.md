@@ -43,7 +43,7 @@ This project offers the following packages:
 | Package | Description | Downloads |
 | -: | - | :- |
 | [![niru][cli-img]][cli-pkg] | Provides the .NET global tool. | ![Downloads][cli-dls] |
-| [![Vezel.Niru.Core][core-img]][core-pkg] | Provides shared emulation functionality used by all guests and hosts. | ![Downloads][core-dls] |
+| [![Vezel.Niru][core-img]][core-pkg] | Provides shared emulation functionality used by all guests and hosts. | ![Downloads][core-dls] |
 | [![Vezel.Niru.Guests.Riscv][guests-riscv-img]][guests-riscv-pkg] | Provides emulation for RISC-V guests. | ![Downloads][guests-riscv-dls] |
 | [![Vezel.Niru.Hosts.X64][hosts-x64-img]][hosts-x64-pkg] | Provides just-in-time compilation for x64 hosts. | ![Downloads][hosts-x64-dls] |
 | [![Vezel.Niru.Hosts.Arm64][hosts-arm64-img]][hosts-arm64-pkg] | Provides just-in-time compilation for Arm64 hosts. | ![Downloads][hosts-arm64-dls] |
@@ -51,7 +51,7 @@ This project offers the following packages:
 | [![Vezel.Niru.Hosts.Interpreter][hosts-interpreter-img]][hosts-interpreter-pkg] | Provides interpretation for hosts that disallow just-in-time compilation. | ![Downloads][hosts-interpreter-dls] |
 
 [cli-pkg]: https://www.nuget.org/packages/niru
-[core-pkg]: https://www.nuget.org/packages/Vezel.Niru.Core
+[core-pkg]: https://www.nuget.org/packages/Vezel.Niru
 [guests-riscv-pkg]: https://www.nuget.org/packages/Vezel.Niru.Guests.Riscv
 [hosts-x64-pkg]: https://www.nuget.org/packages/Vezel.Niru.Hosts.X64
 [hosts-arm64-pkg]: https://www.nuget.org/packages/Vezel.Niru.Hosts.Arm64
@@ -59,7 +59,7 @@ This project offers the following packages:
 [hosts-interpreter-pkg]: https://www.nuget.org/packages/Vezel.Niru.Hosts.Interpreter
 
 [cli-img]: https://img.shields.io/nuget/v/niru?label=niru
-[core-img]: https://img.shields.io/nuget/v/Vezel.Niru.Core?label=Vezel.Niru.Core
+[core-img]: https://img.shields.io/nuget/v/Vezel.Niru?label=Vezel.Niru
 [guests-riscv-img]: https://img.shields.io/nuget/v/Vezel.Niru.Guests.Riscv?label=Vezel.Niru.Guests.Riscv
 [hosts-x64-img]: https://img.shields.io/nuget/v/Vezel.Niru.Hosts.X64?label=Vezel.Niru.Hosts.X64
 [hosts-arm64-img]: https://img.shields.io/nuget/v/Vezel.Niru.Hosts.Arm64?label=Vezel.Niru.Hosts.Arm64
@@ -67,7 +67,7 @@ This project offers the following packages:
 [hosts-interpreter-img]: https://img.shields.io/nuget/v/Vezel.Niru.Hosts.Interpreter?label=Vezel.Niru.Hosts.Interpreter
 
 [cli-dls]: https://img.shields.io/nuget/dt/niru?label=
-[core-dls]: https://img.shields.io/nuget/dt/Vezel.Niru.Core?label=
+[core-dls]: https://img.shields.io/nuget/dt/Vezel.Niru?label=
 [guests-riscv-dls]: https://img.shields.io/nuget/dt/Vezel.Niru.Guests.Riscv?label=
 [hosts-x64-dls]: https://img.shields.io/nuget/dt/Vezel.Niru.Hosts.X64?label=
 [hosts-arm64-dls]: https://img.shields.io/nuget/dt/Vezel.Niru.Hosts.Arm64?label=

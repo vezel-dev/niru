@@ -14,8 +14,8 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <TrimmerRootAssembly Include="Vezel.Niru" />
         <TrimmerRootAssembly Include="Vezel.Niru.Common" />
-        <TrimmerRootAssembly Include="Vezel.Niru.Core" />
         <TrimmerRootAssembly Include="Vezel.Niru.Guests.Riscv" />
         <TrimmerRootAssembly Include="Vezel.Niru.Hosts.Arm64" />
         <TrimmerRootAssembly Include="Vezel.Niru.Hosts.Cil" />
