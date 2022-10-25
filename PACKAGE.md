@@ -16,8 +16,6 @@ to new guest and host architectures.
 This project offers the following packages:
 
 * [niru](https://www.nuget.org/packages/niru): Provides the .NET global tool.
-* [Vezel.Niru.Common](https://www.nuget.org/packages/Vezel.Niru.Common):
-  Provides common functionality used by all Niru packages.
 * [Vezel.Niru.Core](https://www.nuget.org/packages/Vezel.Niru.Core):
   Provides shared emulation functionality used by all guests and hosts.
 * [Vezel.Niru.Guests.Riscv](https://www.nuget.org/packages/Vezel.Niru.Guests.Riscv):
