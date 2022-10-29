@@ -28,7 +28,7 @@ public sealed unsafe class UpcallInstruction : Instruction
         Check.NullOrEmpty(name);
         Check.Null(function);
         Check.Null(arguments);
-        Check.ForEach(arguments, arg => Check.Argument(arg?.Unit == block.Unit, arguments));
+        Check.All(arguments, block.Unit, static (arg, unit) => arg?.Unit == unit);
 
         Name = name;
         Function = function;
