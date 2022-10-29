@@ -102,12 +102,12 @@ internal static class Check
     }
 
     public static void All<T, TState>(
-        IEnumerable<T> collection,
+        IEnumerable<T> value,
         in TState state,
         Func<T, TState, bool> predicate,
-        [CallerArgumentExpression(nameof(collection))] string? name = null)
+        [CallerArgumentExpression(nameof(value))] string? name = null)
     {
-        foreach (var item in collection)
+        foreach (var item in value)
             if (!predicate(item, state))
                 throw new ArgumentException(null, name);
     }
