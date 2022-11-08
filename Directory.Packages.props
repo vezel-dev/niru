@@ -23,7 +23,7 @@
         <PackageVersion Include="Silk.NET.OpenAL"
                         Version="2.16.0" />
         <PackageVersion Include="Spectre.Console.Cli"
-                        Version="0.45.1-preview.0.19" />
+                        Version="0.45.1-preview.0.33" />
         <PackageVersion Include="StyleCop.Analyzers"
                         Version="1.2.0-beta.435" />
     </ItemGroup>
