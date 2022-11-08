@@ -3,7 +3,7 @@
         <PackageVersion Include="Iced"
                         Version="1.17.0" />
         <PackageVersion Include="LibObjectFile"
-                        Version="0.3.6" />
+                        Version="0.4.0" />
         <PackageVersion Include="Microsoft.SourceLink.GitHub"
                         Version="1.1.1" />
         <PackageVersion Include="Microsoft.VisualStudio.Threading.Analyzers"
