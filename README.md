@@ -17,7 +17,7 @@
 [![Commits](https://img.shields.io/github/commit-activity/m/vezel-dev/niru/master?label=commits&color=slateblue)](https://github.com/vezel-dev/niru/commits/master)
 [![Build](https://img.shields.io/github/workflow/status/vezel-dev/niru/Build/master)](https://github.com/vezel-dev/niru/actions/workflows/build.yml)
 [![Discussions](https://img.shields.io/github/discussions/vezel-dev/niru?color=teal)](https://github.com/vezel-dev/niru/discussions)
-[![Discord](https://img.shields.io/discord/960716713136095232?color=peru&label=discord)](https://discord.gg/SdBCrRuNxY)
+[![Discord](https://img.shields.io/discord/960716713136095232?color=peru&label=discord)](https://discord.gg/6TQxC6Tcpz)
 
 </div>
 
